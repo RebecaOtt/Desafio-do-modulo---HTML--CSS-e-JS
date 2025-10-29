@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de dados</title>
+    <link rel="stylesheet" href="registrations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="body">
+        <header class="site-header">
+            <div class="header-top">
+                <div class="header-container">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="/assets/Logo-PetShop.png" alt="logo do site">
+                        </a>
+                    </div>
+
+                    <div class="header-socials">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="header-nav">
+                <div class="header-container">
+                    <ul>
+                        <li><a href="/Pagina 1 - form e navbar/index.html">Formulário</a></li>
+                        <li><a href="/Pagina 3 - produtos/products.html">Produtos</a></li>
+                        <li><a href="/Pagina 2 - cards e modal/registrations.html">Agenda de cadastros</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="background-grandient">
+        <main class="container-cards" id="cards-container"></main>
+
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="button-modal" id="close-modal"> Fechar </button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-content"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="registrations.js"></script>
+</body>
+
+</html>

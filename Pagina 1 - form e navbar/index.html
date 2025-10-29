@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="body">
+        <header class="site-header">
+            <div class="header-top">
+                <div class="header-container">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="/assets/Logo-PetShop.png" alt="logo do site">
+                        </a>
+                    </div>
+
+                    <div class="header-socials">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="header-nav">
+                <div class="header-container">
+                    <ul>
+                        <li><a href="/Pagina 1 - form e navbar/index.html">Início</a></li>
+                        <li><a href="/Pagina 3 - produtos/products.html">Produtos</a></li>
+                        <li><a href="/Pagina 2 - cards e modal/registrations.html">Agenda de cadastros</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+
+    <div class="description">
+        <h1>
+            Coração Animal
+        </h1>
+        <p>
+            Só quem é apaixonado por animais sabe: a relação de amor e cumplicidade que temos com nossos bichinhos de
+            estimação é um vínculo único!
+            Por essa razão, não medimos esforços para oferecer o que há de melhor para trazer ainda mais alegria e
+            qualidade de vida.
+            Rações, acessórios e brinquedos estão na nossa listinha de prioridades; e tudo isso você encontra em nosso
+            <b>Pet Shop</b> online.
+        </p>
+    </div>
+
+    <div class="form-container">
+        <form action="#">
+            <div class="form-row">
+                <fieldset>
+                    <legend>Formulário do Tutor</legend>
+
+                    <div class="inputContainer">
+                        <input type="text" id="nome" name="nome" class="input" required />
+                        <label for="nome" class="labelAnimation">Nome</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" id="endereco" name="endereco" class="input" required />
+                        <label for="endereco" class="labelAnimation">Endereço</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="tel" id="telefone" name="telefone" maxlength="11" class="input" required />
+                        <label for="telefone" class="labelAnimation">Telefone</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="atendimento" class="label">Data do Atendimento</label>
+                        <input type="date" id="atendimento" name="atendimento" required />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Formulário do Pet</legend>
+
+                    <div class="inputContainer">
+                        <input type="text" id="nomePet" name="nomePet" class="input" required />
+                        <label for="nomePet" class="labelAnimation">Nome</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="number" id="idade" name="idade" max="99" class="input" required />
+                        <label for="idade" class="labelAnimation">Idade</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" id="portAnimal" name="portAnimal" class="input" required />
+                        <label for="portAnimal" class="labelAnimation">Porte do Pet</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <input type="submit" onclick="saveForm()" id="submit" name="submit" value="Enviar" />
+        </form>
+    </div>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer_contacts">
+                <p>Obrigado por visitar nosso site!</p>
+                <div id="footer_medias">
+                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+                </div>
+
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Coração Animal</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link"> petz.com.br </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link"> Nossas lojas </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link"> Atendimentos </a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="/Pagina 3 - produtos/products.html#cats" class="footer-link"> Gatos </a>
+                </li>
+                <li>
+                    <a href="/Pagina 3 - produtos/products.html#dogs" class="footer-link"> Cachorros </a>
+                </li>
+                <li>
+                    <a href="/Pagina 3 - produtos/products.html#toys" class="footer-link"> Brinquedos </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer-copyright">
+            &#169
+            2025
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
