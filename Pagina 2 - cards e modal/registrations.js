@@ -1,4 +1,4 @@
-const clientes = [];
+const customers = [];
 
 for (let i = 1; i <= localStorage.cont; i++) {
   const data = localStorage.getItem("cad" + i);
@@ -7,17 +7,17 @@ for (let i = 1; i <= localStorage.cont; i++) {
     const parts = data.split(";");
 
     if (parts.length > 4) {
-      const cliente = {
-        nome: parts[0],
-        endereco: parts[1],
-        telefone: parts[2],
-        dataAtendimento: parts[3],
-        nomeAnimal: parts[4],
-        idade: parts[5],
-        porteAnimal: parts[6],
+      const client = {
+        name: parts[0],
+        address: parts[1],
+        fone: parts[2],
+        dateService: parts[3],
+        namePet: parts[4],
+        years: parts[5],
+        sizePet: parts[6],
       };
 
-      clientes.push(cliente);
+      customers.push(client);
     }
   }
 }
@@ -29,50 +29,50 @@ const closeModalButton = document.getElementById("close-modal");
 const modalTitle = document.getElementById("modal-title");
 const modalContent = document.getElementById("modal-content");
 
-function carregarCards() {
+function loadCards() {
   cardsContainer.innerHTML = "";
 
-  if (clientes.length === 0) {
+  if (customers.length === 0) {
     cardsContainer.innerHTML = "<p style='text-align:center; font-size:18px;'>Nenhum cliente cadastrado.</p>";
     return;
   }
 
-  clientes.forEach((cliente) => {
+  customers.forEach((client) => {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    const data = new Date(cliente.dataAtendimento);
-    const dataFormatada = data.toLocaleDateString('pt-BR', {
+    const data = new Date(client.dateService);
+    const dateFormatted = data.toLocaleDateString('pt-BR', {
       day: '2-digit',
       month: '2-digit',
       year: 'numeric'
     });
 
-    card.innerHTML = `<h3>${cliente.nomeAnimal}</h3> <p><strong>Data:</strong> ${dataFormatada}</p>`;
+    card.innerHTML = `<h3>${client.namePet}</h3> <p><strong>Data:</strong> ${dateFormatted}</p>`;
 
-    card.addEventListener("click", () => abrirModal(cliente));
+    card.addEventListener("click", () => openModal(client));
 
     cardsContainer.appendChild(card);
   });
 }
 
-function abrirModal(cliente) {
-  modalTitle.textContent = cliente.nomeAnimal;
+function openModal(client) {
+  modalTitle.textContent = client.namePet;
 
-  const data = new Date(cliente.dataAtendimento);
-    const dataFormatada = data.toLocaleDateString('pt-BR', {
+  const data = new Date(client.dateService);
+    const dateFormatted = data.toLocaleDateString('pt-BR', {
       day: '2-digit',
       month: '2-digit',
       year: 'numeric'
     });
 
   modalContent.innerHTML = `
-    <p><strong>Nome do dono:</strong> ${cliente.nome}</p>
-    <p><strong>Endereço:</strong> ${cliente.endereco}</p>
-    <p><strong>Telefone:</strong> ${cliente.telefone}</p>
-    <p><strong>Data do atendimento:</strong> ${dataFormatada}</p>
-    <p><strong>Idade do animal:</strong> ${cliente.idade}</p>
-    <p><strong>Porte do animal:</strong> ${cliente.porteAnimal}</p>
+    <p><strong>Nome do dono:</strong> ${client.name}</p>
+    <p><strong>Endereço:</strong> ${client.address}</p>
+    <p><strong>Telefone:</strong> ${client.fone}</p>
+    <p><strong>Data do atendimento:</strong> ${dateFormatted}</p>
+    <p><strong>Idade do animal:</strong> ${client.years}</p>
+    <p><strong>Porte do animal:</strong> ${client.sizePet}</p>
   `;
 
   toggleModal();
@@ -87,4 +87,4 @@ function toggleModal() {
   el.addEventListener("click", () => toggleModal());
 });
 
-carregarCards();
+loadCards();

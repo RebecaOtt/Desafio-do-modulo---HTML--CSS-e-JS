@@ -9,30 +9,30 @@ if (!localStorage.cont) {
   localStorage.cont = 0;
 }
 
-const produtosNormais = document.querySelectorAll(".cols .products");
-const produtosFavoritos = document.querySelectorAll(".colsFavorites img");
+const normalProducts = document.querySelectorAll(".cols .products");
+const favoriteProducts = document.querySelectorAll(".colsFavorites img");
 
-produtosNormais.forEach(produto => {
-  produto.addEventListener("click", () => {
-    const nome = produto.querySelector(".product").textContent;
-    const preco = produto.querySelector(".product-price").textContent;
-    const dados = `${nome};${preco}`;
+normalProducts.forEach(product => {
+  product.addEventListener("click", () => {
+    const name = product.querySelector(".product").textContent;
+    const price = product.querySelector(".product-price").textContent;
+    const data = `${name};${price}`;
 
     localStorage.cont = Number(localStorage.cont) + 1;
-    localStorage.setItem("cad" + localStorage.cont, dados);
+    localStorage.setItem("cad" + localStorage.cont, data);
 
     alert("Salvo no carrinho!");
   });
 });
 
-produtosFavoritos.forEach(img => {
+favoriteProducts.forEach(img => {
   img.addEventListener("click", () => {
-    const nome = img.alt;
-    const preco = "";
-    const dados = `${nome};${preco}`;
+    const name = img.alt;
+    const price = "";
+    const data = `${name};${price}`;
 
     localStorage.cont = Number(localStorage.cont) + 1;
-    localStorage.setItem("cad" + localStorage.cont, dados);
+    localStorage.setItem("cad" + localStorage.cont, data);
 
     alert("Salvo no carrinho!");
   });

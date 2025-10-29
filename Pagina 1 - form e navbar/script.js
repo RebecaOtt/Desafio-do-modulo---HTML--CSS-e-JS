@@ -1,15 +1,15 @@
 function saveForm() {
   if (typeof(Storage) !== "undefined") {
 
-    const nome = document.getElementById('nome').value.trim();
-    const endereco = document.getElementById('endereco').value.trim();
-    const telefone = document.getElementById('telefone').value.trim();
-    const atendimento = document.getElementById('atendimento').value.trim();
-    const nomePet = document.getElementById('nomePet').value.trim();
-    const idade = document.getElementById('idade').value.trim();
-    const portAnimal = document.getElementById('portAnimal').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const fone = document.getElementById('fone').value.trim();
+    const service = document.getElementById('service').value.trim();
+    const namePet = document.getElementById('namePet').value.trim();
+    const years = document.getElementById('years').value.trim();
+    const sizePet = document.getElementById('sizePet').value.trim();
 
-    if (!nome || !endereco || !telefone || !atendimento || !nomePet || !idade || !portAnimal) {
+    if (!name || !address || !fone || !service || !namePet || !years || !sizePet) {
       alert("Por favor, preencha todos os campos antes de salvar!");
       return;
     }
@@ -20,7 +20,7 @@ function saveForm() {
       localStorage.cont = 1;
     }
 
-    let cad = `${nome};${endereco};${telefone};${atendimento};${nomePet};${idade};${portAnimal}`;
+    let cad = `${name};${address};${fone};${service};${namePet};${years};${sizePet}`;
 
     localStorage.setItem("cad" + localStorage.cont, cad);
     alert("Cadastro salvo!");
