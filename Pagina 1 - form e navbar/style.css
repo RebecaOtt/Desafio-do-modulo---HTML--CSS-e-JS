@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
 
 :root {
-    --azul-bebe: rgb(173, 216, 230);
-    --azul-bebe-claro: rgb(200, 235, 245);
-    --azul-bebe-escuro: rgb(140, 190, 210);
-    --azul-ecuro: rgb(0, 104, 145);
-    --branco: #ffffff;
-    --cinza-azulado: rgb(100, 130, 150);
-    --preto-suave: rgba(0, 0, 0, 0.7);
+    --baby-blue: rgb(173, 216, 230);
+    --baby-blue-light: rgb(200, 235, 245);
+    --baby-blue-dark: rgb(140, 190, 210);
+    --dark-blue: rgb(0, 104, 145);
+    --white: #ffffff;
+    --bluish-gray: rgb(100, 130, 150);
+    --smooth-black: rgba(0, 0, 0, 0.7);
     --cinza-p: #747474;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .site-header {
     width: 100%;
-    background-color: var(--azul-bebe);
+    background-color: var(--baby-blue);
 }
 
 .header-container {
@@ -33,7 +33,7 @@ body {
 }
 
 .header-top {
-    background-color: var(--branco);
+    background-color: var(--white);
     padding: 0.3rem 4%;
 }
 
@@ -53,19 +53,19 @@ body {
     font-size: 20px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid var(--cinza-azulado);
+    border: 1px solid var(--bluish-gray);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .header-socials button:hover {
-    background-color: var(--azul-bebe);
-    color: var(--branco);
-    border-color: var(--azul-bebe);
+    background-color: var(--baby-blue);
+    color: var(--white);
+    border-color: var(--baby-blue);
 }
 
 .header-nav {
-    background-color: var(--azul-bebe-escuro);
+    background-color: var(--baby-blue-dark);
 }
 
 .header-nav ul {
@@ -76,7 +76,7 @@ body {
 }
 
 .header-nav ul li a {
-    color: var(--branco);
+    color: var(--white);
     padding: 10px 25px;
     font-size: 20px;
     display: block;
@@ -84,8 +84,8 @@ body {
 }
 
 .header-nav ul li a:hover {
-    background-color: var(--azul-bebe-claro);
-    color: var(--preto-suave);
+    background-color: var(--baby-blue-light);
+    color: var(--smooth-black);
     box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -102,7 +102,7 @@ body {
 
 h1 {
     padding: 0px 0px 8px;
-    color: var(--azul-ecuro);
+    color: var(--dark-blue);
 }
 
 .form-container {
@@ -111,7 +111,7 @@ h1 {
     margin: 40px auto 40px auto;
     padding: 15px;
     border-radius: 15px;
-    background-color: var(--azul-bebe-escuro);
+    background-color: var(--baby-blue-dark);
 
 }
 
@@ -126,16 +126,16 @@ h1 {
 }
 
 fieldset {
-    border: 2px solid var(--branco);
+    border: 2px solid var(--white);
     padding: 5.6px 12px 10px;
 }
 
 legend {
-    border: 2px solid var(--branco);
+    border: 2px solid var(--white);
     padding: 8px;
     text-align: center;
-    background-color: var(--branco);
-    color: var(--azul-ecuro);
+    background-color: var(--white);
+    color: var(--dark-blue);
     font-weight: bold;
     border-radius: 8px;
 }
@@ -147,7 +147,7 @@ legend {
 }
 
 .label {
-    color: var(--branco);
+    color: var(--white);
 }
 
 #service {
@@ -160,13 +160,13 @@ legend {
 }
 
 p {
-    color: var(--branco);
+    color: var(--white);
 }
 
 .input {
     background: none;
     border: none;
-    border-bottom: 1px solid var(--branco);
+    border-bottom: 1px solid var(--white);
     outline: none;
     font-size: 16px;
     width: 100%;
@@ -178,14 +178,14 @@ p {
     left: 0;
     pointer-events: none;
     transition: 0.5s;
-    color: var(--branco);
+    color: var(--white);
 }
 
 .input:focus~.labelAnimation,
 .input:valid~.labelAnimation {
     top: -19px;
     font-size: 14px;
-    color: var(--azul-ecuro);
+    color: var(--dark-blue);
 }
 
 #submit {
@@ -197,26 +197,26 @@ p {
     border: none;
 
     background-image: linear-gradient(to right,
-            var(--azul-bebe-claro),
-            var(--branco));
+            var(--baby-blue-light),
+            var(--white));
 }
 
 #submit:hover {
     background-image: linear-gradient(to left,
-            var(--azul-ecuro),
-            var(--branco));
+            var(--dark-blue),
+            var(--white));
 }
 
 footer {
     width: 100%;
-    color: var(--branco);
-    background-color: var(--azul-bebe-claro);
+    color: var(--white);
+    background-color: var(--baby-blue-light);
 }
 
 #footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: var(--azul-bebe-claro);
+    background-color: var(--baby-blue-light);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
@@ -224,7 +224,7 @@ footer {
 }
 
 #footer-content p {
-    color: var(--cinza-azulado);
+    color: var(--bluish-gray);
 }
 
 #footer_contacts,
@@ -250,8 +250,8 @@ footer {
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    color: var(--cinza-azulado);
-    border: 1px solid var(--azul-bebe-escuro);
+    color: var(--bluish-gray);
+    border: 1px solid var(--baby-blue-dark);
     border-radius: 50%;
     font-size: 1.2rem;
     cursor: pointer;
@@ -259,9 +259,9 @@ footer {
 }
 
 #footer_medias button:hover {
-    background-color: var(--azul-bebe);
-    color: var(--branco);
-    border-color: var(--azul-bebe);
+    background-color: var(--baby-blue);
+    color: var(--white);
+    border-color: var(--baby-blue);
 }
 
 .footer-list {
@@ -272,11 +272,11 @@ footer {
 }
 
 .footer-list h3 {
-    color: var(--cinza-azulado);
+    color: var(--bluish-gray);
 }
 
 .footer-list .footer-link {
-    color: var(--cinza-azulado);
+    color: var(--bluish-gray);
     transition: 0.2s;
 }
 
@@ -287,11 +287,11 @@ footer {
 #footer-copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--azul-bebe-escuro);
+    background-color: var(--baby-blue-dark);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
-    color: var(--branco);
+    color: var(--white);
 }
 
 @media (max-width: 900px) {

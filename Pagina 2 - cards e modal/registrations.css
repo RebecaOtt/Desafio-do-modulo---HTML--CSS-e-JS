@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
 
 :root {
-  --azul-bebe: rgb(173, 216, 230);
-  --azul-bebe-claro: rgb(200, 235, 245);
-  --azul-bebe-escuro: rgb(140, 190, 210);
-  --azul-ecuro: rgb(0, 104, 145);
-  --branco: #ffffff;
-  --cinza-azulado: rgb(100, 130, 150);
-  --preto-suave: rgba(0, 0, 0, 0.7);
-  --cinza-p: #747474;
+  --baby-blue: rgb(173, 216, 230);
+  --baby-blue-light: rgb(200, 235, 245);
+  --baby-blue-dark: rgb(140, 190, 210);
+  --dark-blue: rgb(0, 104, 145);
+  --white: #ffffff;
+  --bluish-gray: rgb(100, 130, 150);
+  --smooth-black: rgba(0, 0, 0, 0.7);
+  --gray-p: #747474;
 }
 
 * {
@@ -24,7 +24,7 @@ body {
 
 .site-header {
   width: 100%;
-  background-color: var(--azul-bebe);
+  background-color: var(--baby-blue);
 }
 
 .header-container {
@@ -33,7 +33,7 @@ body {
 }
 
 .header-top {
-  background-color: var(--branco);
+  background-color: var(--white);
   padding: 0.3rem 4%;
 }
 
@@ -53,19 +53,19 @@ body {
   font-size: 20px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid var(--cinza-azulado);
+  border: 1px solid var(--bluish-gray);
   cursor: pointer;
   transition: 0.3s;
 }
 
 .header-socials button:hover {
-  background-color: var(--azul-bebe);
-  color: var(--branco);
-  border-color: var(--azul-bebe);
+  background-color: var(--baby-blue);
+  color: var(--white);
+  border-color: var(--baby-blue);
 }
 
 .header-nav {
-  background-color: var(--azul-bebe-escuro);
+  background-color: var(--baby-blue-dark);
 }
 
 .header-nav ul {
@@ -76,7 +76,7 @@ body {
 }
 
 .header-nav ul li a {
-  color: var(--branco);
+  color: var(--white);
   padding: 10px 25px;
   font-size: 20px;
   display: block;
@@ -84,8 +84,8 @@ body {
 }
 
 .header-nav ul li a:hover {
-  background-color: var(--azul-bebe-claro);
-  color: var(--preto-suave);
+  background-color: var(--baby-blue-light);
+  color: var(--smooth-black);
   box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -97,8 +97,8 @@ body {
 }
 
 .card {
-  background-color: var(--azul-bebe-claro);
-  border: 2px solid var(--azul-bebe-escuro);
+  background-color: var(--baby-blue-light);
+  border: 2px solid var(--baby-blue-dark);
   border-radius: 12px;
   padding: 15px;
   text-align: center;
@@ -109,25 +109,25 @@ body {
 
 .card:hover {
   transform: scale(1.05);
-  background-color: var(--azul-bebe);
+  background-color: var(--baby-blue);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
-  color: var(--azul-ecuro);
+  color: var(--dark-blue);
   margin-bottom: 10px;
   font-size: 1.4rem;
 }
 
 .card p {
-  color: var(--cinza-p);
+  color: var(--gray-p);
   font-size: 1rem;
 }
 
 .button-modal {
   padding: 0.6rem 1.2rem;
-  background-color: var(--cinza-azulado);
-  color: var(--branco);
+  background-color: var(--bluish-gray);
+  color: var(--white);
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -156,7 +156,7 @@ body {
   transform: translate(-50%, -50%);
   width: 500px;
   max-width: 90%;
-  background-color: var(--branco);
+  background-color: var(--white);
   padding: 1.2rem;
   border-radius: 0.5rem;
   z-index: 10;
